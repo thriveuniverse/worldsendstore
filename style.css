@@ -1,0 +1,7 @@
+:root {
+  --bg-main: #000000;        /* worldsendstore: pure black */
+  --bg-thrive: #0a0e17;      /* your main site navy */
+  --accent: #00f2ff;         /* exact teal from Thrive Clan */
+  --danger: #ff0033;         /* countdown red */
+  --text: #ffffff;
+}
