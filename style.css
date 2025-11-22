@@ -1,3 +1,40 @@
+
+.site-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem 1rem;
+  position: relative;
+  min-height: 220px;
+}
+
+.logo-left {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  z-index: 10;
+}
+
+.thrive-logo {
+  height: 80px;          /* big and visible */
+  width: auto;
+  filter: drop-shadow(0 0 12px rgba(0,242,255,0.4));
+}
+
+.header-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Mobile: logo moves to top centre */
+@media (max-width: 840px) {
+  .site-header { flex-direction: column; align-items: center; }
+  .logo-left {
+    position: static;
+    margin-bottom: 1rem;
+  }
+  .thrive-logo { height: 70px; }
+}
 :root {
   --bg-main: #000000;        /* worldsendstore: pure black */
   --bg-thrive: #0a0e17;      /* your main site navy */
